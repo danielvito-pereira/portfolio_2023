@@ -107,28 +107,28 @@ body {
   left:0%;
 }
 .circulos .circulo1 .path{
-  fill: #2e8b57;
+  fill: #2e8b2e;
 }
 .circulos .circulo2{
   top:0%;
   right:0%;
 }
 .circulos .circulo2 .path{
-  fill: rgb(155, 0, 34);
+  fill: rgb(252, 5, 5);
 }
 .circulos .circulo3{
   bottom:0%;
   left:0%;
 }
 .circulos .circulo3 .path{
-  fill: rgb(1, 99, 165);
+  fill: rgb(1, 12, 165);
 }
 .circulos .circulo4{
   bottom:0%;
   right:0%;
 }
 .circulos .circulo4 .path{
-  fill: rgb(0, 59, 155);
+  fill: rgb(155, 88, 0);
 }
 .header{
   width: 100%;
@@ -158,7 +158,7 @@ body {
   position: relative;
   z-index: 2;
 }
-.seccion{
+.section{
   width: 100%;
   min-height: 80vh;
   padding: 2em;
@@ -168,21 +168,21 @@ body {
   justify-content: center;
   align-items: center;
 }
-.seccion .info{
+.section .info{
   font-size: 1.2em;
   animation: aparecer1 2s ease 1 both ;
 }
-.seccion .ul{
+.section .ul{
   margin: 2em 0 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
-.seccion .ul .li{
+.section .ul .li{
   margin: 0 1em;
 }
-.seccion .ul .a{
+.section .ul .a{
   border:1px solid rgba(255,255,255,.2);
   border-radius: 5px;
   padding: 1em 1em 1em;
@@ -191,13 +191,13 @@ body {
   transition: all .5s ease;
   animation: aparecer1 2s ease 1 backwards;
 }
-.seccion .ul>:nth-child(2) .a{
+.section .ul>:nth-child(2) .a{
   animation-delay: .2s;
 }
-.seccion .ul .a:hover{
+.section .ul .a:hover{
   border-color: var(--blanco);
 }
-.seccion .h2{
+.section .h2{
   font-family: var(--tipo-titular);
   font-weight: 600;
   font-size: 5em;
@@ -205,11 +205,11 @@ body {
   color:var(--blanco);
   mix-blend-mode: exclusion;
 }
-.seccion .h3{
+.section .h3{
   font-family: var(--tipo-titular);
   font-size: 4.3em;
 }
-.seccion .grid{
+.section .grid{
   width: 90%;
   max-width: 40em;
   margin: 1em 0;
@@ -217,7 +217,7 @@ body {
   grid-template-columns: repeat( auto-fit , minmax( 15rem , 1fr) );
   gap:1em;
 }
-.seccion .article{
+.section .article{
   width: 100%;
   min-height: 20vh;
   display: flex;
@@ -228,7 +228,7 @@ body {
   overflow: hidden;
   border-radius: 1em;
 }
-.seccion .h4{
+.section .h4{
   width:100%;
   height: 100%;
   background-color: var(--negro-5);
@@ -248,7 +248,7 @@ body {
   transform:translateZ(1) scale(1.5);
   transition: all .5s ease;
 }
-.seccion .article:hover .h4{
+.section .article:hover .h4{
   opacity: 1;
   transform:translateZ(1) scale(1);
 }

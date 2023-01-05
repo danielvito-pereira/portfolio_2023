@@ -279,7 +279,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
-
+  gap: 20px;
 }
 .tecnologia  .logo-tec{
   width: 100%;

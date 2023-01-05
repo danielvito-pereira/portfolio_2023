@@ -266,7 +266,7 @@ body {
 .tecnologia{
   gap: 50px;
 }
-.tecnologia .skills{
+.skills{
   display: flex;
   align-items: center;
   justify-content:center;

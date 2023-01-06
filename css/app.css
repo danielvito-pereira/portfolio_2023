@@ -221,6 +221,7 @@ body {
 .section .article{
   width: 100%;
   min-height: 20vh;
+  max-height: 31.25rem ;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

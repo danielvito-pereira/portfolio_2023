@@ -592,7 +592,7 @@ body {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   font-family: sans-serif;
-
+  cursor: pointer;
 
 }
 

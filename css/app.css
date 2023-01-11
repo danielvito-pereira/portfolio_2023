@@ -376,6 +376,7 @@ body {
 .works{
   color:var(--blanco);
   gap: 3.125rem;
+  min-height: 60vh;
 }
 .works .h2{
   margin: 0 0 1rem;
@@ -386,8 +387,9 @@ body {
 .tecnologia{
   gap: 50px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 5em;
+  min-height: 60vh;
 }
 .skills{
   display: flex;

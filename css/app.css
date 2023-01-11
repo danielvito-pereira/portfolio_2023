@@ -579,7 +579,9 @@ body {
 
 
 
-
+.svg_js{
+ 
+}
 
 
 
@@ -590,6 +592,8 @@ body {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   font-family: sans-serif;
+
+
 }
 
 .title{
@@ -643,6 +647,7 @@ body {
   background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
    rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
   color: coral;
+
 }
 
 .flip-card-back{
@@ -651,4 +656,5 @@ body {
   color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+           
 }

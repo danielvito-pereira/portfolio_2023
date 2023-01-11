@@ -131,30 +131,9 @@ body {
 .circulos .circulo4 .path{
   fill: rgb(0, 0, 0);
 }
-.header{
-  width: 100%;
-  min-height: 5em;
-  background: lightblue;
-  padding: 1em 2em;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  display: none;
-}
-.header .ul{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
 
-}
-.header .li{
-  margin:0 1em;
-}
-.main{
+.main,.header{
   background: var(--negro-7);
-  margin: 0 0 1em;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -202,7 +181,7 @@ body {
 .btn:visited {
  text-transform: uppercase;
  text-decoration: none;
- color: rgb(27, 27, 27);
+ color: var(--blanco);
  padding: 10px 30px;
  border: 1px solid;
  border-radius: 1000px;
@@ -231,7 +210,6 @@ body {
  display: inline-block;
  height: 100%;
  width: 100%;
- border-radius: 100px;
  top: 0;
  left: 0;
  position: absolute;
@@ -241,7 +219,6 @@ body {
 }
 
 .btn:hover::after {
- background-color: rgb(0, 238, 255);
  -webkit-transform: scaleX(1.4) scaleY(1.5);
      -ms-transform: scaleX(1.4) scaleY(1.5);
          transform: scaleX(1.4) scaleY(1.5);
@@ -284,7 +261,7 @@ body {
 .section .h4{
   width:100%;
   height: 100%;
-  background-color: var(--negro-5);
+  background-color: rgba(0, 0, 0, .2);
   backdrop-filter: blur(1rem);
   position: absolute;
   bottom:0;
@@ -305,6 +282,98 @@ body {
   opacity: 1;
   transform:translateZ(1) scale(1);
 }
+
+/*efeito do card*/
+
+.i{
+  width: 20%;
+}
+.container {
+  bottom: 0;
+  margin: auto;
+  -webkit-box-shadow: 0 0 5px rgb(0, 0, 0);
+  box-shadow: 0 0 5px #000;
+  cursor: pointer;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content:center;
+  gap: 5em;
+  padding: 1em;
+  color: white;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: "Playfair Display", serif;
+}
+.overlay .a{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  width: 90%;
+}
+.head {
+  font-size: 30px;
+  line-height: 40px;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.price {
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  margin-bottom: 2em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content:space-around;
+  width: 90%;
+}
+.cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.cart span {
+  margin-left: 0.625rem;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .overlay .head {
+  transform: translateY(0px);
+}
+.container:hover .overlay hr {
+  width: 4.6875rem;
+  transition-delay: 0.4s;
+}
+.container:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.container:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+.svg{
+  width:3em;
+  height:3em;
+}
+
+/*works*/
 .works{
   color:var(--blanco);
   gap: 3.125rem;

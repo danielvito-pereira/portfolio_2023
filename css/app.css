@@ -176,7 +176,6 @@ body {
 .section .ul .a:hover{
   border-color: var(--blanco);
 }
-
 .btn:link,
 .btn:visited {
  text-transform: uppercase;
@@ -239,7 +238,7 @@ body {
 }
 .section .grid{
   width: 90%;
-  max-width: 40em;
+  max-width: 50%;
   margin: 1em 0;
   display: grid;
   grid-template-columns: repeat( auto-fit , minmax( 15rem , 1fr) );
@@ -386,6 +385,9 @@ body {
 
 .tecnologia{
   gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 5em;
 }
 .skills{
   display: flex;
@@ -439,10 +441,6 @@ body {
   height:3em;
 }
 
-.about .svg:hover{
-  fill: rgb(0, 0, 0);
-
-}
 
 .footer{
   padding:2em 0;
@@ -491,8 +489,6 @@ body {
   }
 }
 
-
-
 .card {
   overflow: visible;
   position: relative;
@@ -501,7 +497,6 @@ body {
   background: rgba(255, 255, 255, 0.842);
   box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
 }
-
 .card:before,
 .card:after {
   content: "";
@@ -515,7 +510,6 @@ body {
   transition: 0.5s;
   z-index: -99;
 }
-
 .details {
   position: absolute;
   left: -10px;
@@ -525,7 +519,6 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-
 /*Image*/
 .imgbox {
   position: absolute;
@@ -567,24 +560,13 @@ body {
 .card:hover .imgbox {
   bottom: 80px;
 }
-
 .card:hover:before {
   transform: rotate(20deg);
 }
-
 .card:hover:after {
   transform: rotate(10deg);
   box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
 }
-
-
-
-.svg_js{
- 
-}
-
-
-
 .flip-card{
   background-color: transparent;
   width: 190px;
@@ -595,14 +577,12 @@ body {
   cursor: pointer;
 
 }
-
 .title{
   font-size: 1.5em;
   font-weight: 900;
   text-align: center;
   margin: 0;
 }
-
 .flip-card-inner{
   position: relative;
   width: 100%;
@@ -679,6 +659,12 @@ body {
   color: coral;
   border: 1px solid  #41B883;
 }
+.-scrum{
+  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+   rgb(255, 255, 255) 40%, #000000 48%);
+  color: coral;
+  border: 1px solid  #000000;
+}
 .flip-card-back{
   background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
    bisque 40%, rgb(255, 185, 160) 78%);
@@ -686,4 +672,34 @@ body {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
            
+}
+.flip-card-back.-html{
+  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+   rgb(255, 255, 255) 40%,#F16529 48%); 
+   color: coral;          
+}
+.flip-card-back.-css{
+  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+   rgb(255, 255, 255) 40%, #33AADD 48%);  
+   color: coral;           
+}
+.flip-card-back.-js{
+  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+   rgb(255, 255, 255) 40%, #f5de19 48%);
+  color: coral;        
+}
+.flip-card-back.-scss{
+  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+   rgb(255, 255, 255) 40%, #cd6799 48%);
+  color: coral;        
+}
+.flip-card-back.-vue{
+  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+   rgb(255, 255, 255) 40%, #41B883 48%);
+  color: coral;      
+}
+.flip-card-back.-scrum{
+  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+   rgb(255, 255, 255) 40%, #000000 48%);
+  color: coral;    
 }

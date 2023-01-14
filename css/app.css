@@ -256,6 +256,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 1em;
+  
 }
 .section .h4{
   width:100%;
@@ -377,13 +378,23 @@ body {
   color:var(--blanco);
   gap: 3.125rem;
   min-height: 60vh;
+  
 }
 .works .h2{
   margin: 0 0 1rem;
   color:inherit;
   
 }
+.figure{
+  width: 100%;
+  height: 100%;
 
+}
+.figure img{
+  width: 100%;
+  height: 100%;
+
+}
 .tecnologia{
   gap: 50px;
   flex-wrap: wrap;
@@ -398,7 +409,6 @@ body {
   flex-wrap: wrap;
   gap: 50px;
 }
-
 .tecnologia .tec{
   width: 10%;
   display: flex;
@@ -418,7 +428,6 @@ body {
   text-align: left;
   margin: 0 0 0rem;
 }
-
 .about .h2{
   margin: 0 0 2rem;
 }
@@ -442,8 +451,6 @@ body {
   width:3em;
   height:3em;
 }
-
-
 .footer{
   padding:2em 0;
   text-align: center;
@@ -451,7 +458,6 @@ body {
   position: relative;
   z-index: 2;
 }
-
 @keyframes circulo1{
   from{
     transform:rotate(0deg) scale(2);
@@ -490,7 +496,6 @@ body {
     width: 30%;
   }
 }
-
 .card {
   overflow: visible;
   position: relative;
@@ -532,7 +537,6 @@ body {
   transition: 0.5s;
   z-index: 1;
 }
-
 .img {
   background: #4158D0;
   background-image: linear-gradient(45deg, #4158D0, #C850C0);
@@ -542,14 +546,12 @@ body {
   width: 100%;
   height: 100%;
 }
-
 /*Text*/
 .title {
   font-weight: 600;
   font-size: 20px;
   color: #777;
 }
-
 .caption {
   font-weight: 500;
   font-size: 16px;
@@ -557,33 +559,26 @@ body {
   display: block;
   margin-top: 5px;
 }
-
 /*Hover*/
-.card:hover .imgbox {
-  bottom: 80px;
-}
-.card:hover:before {
-  transform: rotate(20deg);
-}
-.card:hover:after {
-  transform: rotate(10deg);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
-}
 .flip-card{
   background-color: transparent;
-  width: 190px;
-  height: 254px;
+  width: 15.875rem;
+  height: 25.25rem;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   font-family: sans-serif;
   cursor: pointer;
-
 }
 .title{
   font-size: 1.5em;
   font-weight: 900;
   text-align: center;
-  margin: 0;
+  margin-bottom: 1em;
+}
+.tc{
+  text-align:center;
+  font-size: 1em;
+  padding-bottom: 1em;
 }
 .flip-card-inner{
   position: relative;
@@ -597,12 +592,10 @@ body {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
-
 .flip-card:hover .flip-card-inner{
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
-
 .flip-card-front, .flip-card-back{
   -webkit-box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
           box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
@@ -624,7 +617,6 @@ body {
   border: 1px solid coral;
   border-radius: 1rem;
 }
-
 .flip-card-front{
   background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
    rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
@@ -637,11 +629,17 @@ body {
   color: coral;
   border: 1px solid #F16529;
 }
+.-html .title{
+  color: coral;
+}
 .-css{
   background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #33AADD 48%);
   color: coral;
   border: 1px solid  #33AADD;
+}
+.-css .title{
+  color:  #33AADD;
 }
 .-js{
   background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
@@ -649,11 +647,17 @@ body {
   color: coral;
   border: 1px solid  #f5de19;
 }
+.-js .title{
+  color:#f5de19;
+}
 .-scss{
   background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #cd6799 48%);
   color: coral;
   border: 1px solid  #cd6799;
+}
+.-scss .title{
+  color: #cd6799;
 }
 .-vue{
   background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
@@ -661,11 +665,17 @@ body {
   color: coral;
   border: 1px solid  #41B883;
 }
+.-vue .title{
+  color:#41B883;
+}
 .-scrum{
   background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #000000 48%);
   color: coral;
   border: 1px solid  #000000;
+}
+.-scrum .title{
+  color: #000000;
 }
 .flip-card-back{
   background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
@@ -705,3 +715,27 @@ body {
    rgb(255, 255, 255) 40%, #000000 48%);
   color: coral;    
 }
+
+
+
+
+
+
+
+
+
+.card {
+  width: 12.5rem;
+  height: 17rem;
+  background-color: #212121;
+  border-radius: 1rem;
+  border: #212121 0.2rem solid;
+  transition: all 0.4s ease-in;
+  box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+ }
+ 
+ .card:hover {
+  transform: translateY(-1.5rem);
+  border: #f2295bf0 0.2em solid;
+  border-radius: 2.5rem 0 2.5rem 0;
+ }

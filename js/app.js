@@ -7,11 +7,7 @@ const hh2   = document.querySelectorAll('.hh2');
 
 hh2.forEach((cadaH2, i) => {
   hh2[i].addEventListener('click',()=>{
-    bloco.forEach((cadaBloco, i)=>{
-      //retirando a classe ativo
-      bloco[i].classList.remove('ativo')
-    })
-    //adicionando a classe ativo ao bloco cujo a posição seja igual a do h2
-    bloco[i].classList.add('ativo')
+    bloco[i].classList.toggle('ativo') 
   })
 })    
+

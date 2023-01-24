@@ -487,13 +487,26 @@ body {
   .section .h3{
     font-size: 2em;
   }
+  .section .ul{
+    gap: 1.125rem;
+  }
+  .tecnologia {
+    justify-content: space-evenly;
+    gap: 0;
+  }
   .tecnologia .skills{
     display: flex;
     flex-direction: column;
-  }
 
+  }
   .tecnologia .tec{
     width: 30%;
+  }
+  .skills{
+    display: none !important;
+  }
+  .soft{
+    display: block !important;
   }
 }
 .card {
@@ -618,13 +631,13 @@ body {
   border-radius: 1rem;
 }
 .flip-card-front{
-  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+  background: linear-gradient(135deg, bisque 60%, rgb(255, 231, 222) 88%,
    rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
   color: coral;
 
 }
 .-html{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%,#F16529 48%);
   color: coral;
   border: 1px solid #F16529;
@@ -633,7 +646,7 @@ body {
   color: coral;
 }
 .-css{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #33AADD 48%);
   color: coral;
   border: 1px solid  #33AADD;
@@ -642,7 +655,7 @@ body {
   color:  #33AADD;
 }
 .-js{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #f5de19 48%);
   color: coral;
   border: 1px solid  #f5de19;
@@ -651,7 +664,7 @@ body {
   color:#f5de19;
 }
 .-scss{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #cd6799 48%);
   color: coral;
   border: 1px solid  #cd6799;
@@ -660,7 +673,7 @@ body {
   color: #cd6799;
 }
 .-vue{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #41B883 48%);
   color: coral;
   border: 1px solid  #41B883;
@@ -669,7 +682,7 @@ body {
   color:#41B883;
 }
 .-scrum{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #000000 48%);
   color: coral;
   border: 1px solid  #000000;
@@ -678,7 +691,7 @@ body {
   color: #000000;
 }
 .flip-card-back{
-  background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+  background: linear-gradient(135deg, rgb(255, 174, 145) 30%, coral 88%,
    bisque 40%, rgb(255, 185, 160) 78%);
   color: white;
   -webkit-transform: rotateY(180deg);
@@ -686,46 +699,42 @@ body {
            
 }
 .flip-card-back.-html{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%,#F16529 48%); 
    color: coral;          
 }
 .flip-card-back.-css{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #33AADD 48%);  
    color: coral;           
 }
 .flip-card-back.-js{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #f5de19 48%);
   color: coral;        
 }
 .flip-card-back.-scss{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #cd6799 48%);
   color: coral;        
 }
 .flip-card-back.-vue{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #41B883 48%);
   color: coral;      
 }
 .flip-card-back.-scrum{
-  background: linear-gradient(120deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 88%,
    rgb(255, 255, 255) 40%, #000000 48%);
   color: coral;    
 }
-
-
-
 .soft{
-  background-color: red;
   width: 95%;
   display: flex;
   flex-flow: column nowrap;
   transition: all 0.4s ease;
+  display: none;
 }
-
 .bloco{
   transition: all 0.4s ease;
   display: flex;
@@ -735,20 +744,21 @@ body {
 }
 .hh2{
   width: 100%;
-  background-color: #4158D0;
+  background-color: var(--blanco);
   text-align: left;
   cursor: pointer;
   padding:1em;
   font-size: 1em;
   display: flex;
   justify-content:space-between;
+  color: #e0e0e0;
 }
 .teste{
   background-image: url(./../assets/chevron-right.svg);
   background-repeat: no-repeat;
   padding: 1em;
   transition: all 0.1s ease;
-
+  fill: white;
 }
 .content{
   width: 100%;
@@ -762,11 +772,15 @@ body {
   margin: 0;
   max-width: 95%;
   text-align: left;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 .acordeon .bloco.ativo .content {
-  height: 8em;
-}
+  height: 5em;
 
+}
 .acordeon .bloco.ativo .teste {
   background-image: url(./../assets/chevron-down.svg);
   transition: all 0.1s ease;

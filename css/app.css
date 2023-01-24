@@ -744,7 +744,7 @@ body {
 }
 .hh2{
   width: 100%;
-  background-color: var(--blanco);
+  background-color: black;
   text-align: left;
   cursor: pointer;
   padding:1em;

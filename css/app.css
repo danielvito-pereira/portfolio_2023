@@ -238,7 +238,7 @@ body {
 }
 .section .grid{
   width: 90%;
-  max-width: 50%;
+  max-width: 120rem;
   margin: 1em 0;
   display: grid;
   grid-template-columns: repeat( auto-fit , minmax( 15rem , 1fr) );
@@ -403,6 +403,8 @@ body {
   min-height: 60vh;
 }
 .skills{
+  width: 90%;
+  max-width: 120rem;
   display: flex;
   align-items: center;
   justify-content:center;

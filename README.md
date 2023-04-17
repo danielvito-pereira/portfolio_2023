@@ -1,17 +1,6 @@
 # portfolio_2023
  Este portfolio  é simples somente com o necessário pois o objetivo é simplesmente agrupar meus projetos 
-[Portfolio.webm](https://user-images.githubusercontent.com/64044840/210644421-bdaea67f-d635-4dd2-8275-d9482ff93c3b.webm)
-# Frontend Mentor - Insure landing page solution
 
-This is a solution to the [Insure landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Table of contents
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [O que eu aprendi](#O-que-eu-aprendi)
 
 
 
